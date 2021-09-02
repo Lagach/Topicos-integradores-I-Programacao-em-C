@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float qtd_prd;
+    float valor_vnd;
+    float salario_final;
+    float salario_minimo = 3300;
+    float comissao_qtd;
+    float comissao_valor;
+    float eita_bicho;
+    
+    printf("Quantos produtos você vendeu?:\n");
+    scanf("%f", &qtd_prd);
+    printf("Qual o valor total das suas vendas?: \n");
+    scanf("%f", &valor_vnd);
+    
+    comissao_qtd = (qtd_prd*10);
+    printf("%f\n", comissao_qtd);
+    comissao_valor = ((valor_vnd*3)/100);
+    printf("%f\n", comissao_valor);
+    eita_bicho = (salario_minimo + comissao_qtd + comissao_valor);
+    printf("%f\n", eita_bicho);
+    
+    printf("Seu salário final é de: %f",eita_bicho);
+    
+    return 0;
+}

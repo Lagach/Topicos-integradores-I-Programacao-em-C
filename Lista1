@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float preco_prod;
+    float preco_final;
+    
+    printf("Insira o valor do seu produto:\n");
+    scanf("%f", &preco_prod);
+    
+    if (preco_prod < 90){
+        preco_final = (preco_prod - ((preco_prod*10)/100));
+        printf("O desconto aplicado é de 10 porcento\n");
+        printf("O valor final é de: %f", preco_final);
+    }
+    else if (preco_prod>=90 && preco_prod<=150){
+        preco_final = (preco_prod - ((preco_prod*15)/100));
+        printf("O desconto aplicado é de 15 porcento\n");
+        printf("O valor final é de: %f", preco_final);
+    }
+    else if (preco_prod > 150){
+        preco_final = (preco_prod - ((preco_prod*25)/100));
+        printf("O desconto aplicado é de 25 porcento\n");
+        printf("O valor final é de: %f", preco_final);
+    }
+    
+    return 0;
+}

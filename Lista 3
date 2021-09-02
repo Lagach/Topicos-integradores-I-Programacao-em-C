@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    // joão e rodrigo pagam parcelas iguais, ricardo paga com o resto da divisão(centavos)
+    
+    int valor;
+    int parte_int;
+    int plus;
+    
+    printf("Insira o valor da pizza: \n");
+    scanf("%d", &valor);
+    
+    parte_int = valor / 3;
+    plus = valor % 3;
+    
+    printf("joão paga:%d\n",(parte_int));
+    printf("rodrigo paga:%d\n",(parte_int));
+    printf("ricardo paga:%d ",(parte_int + plus));
+    
+    return 0;
+}

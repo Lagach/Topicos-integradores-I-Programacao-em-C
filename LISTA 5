@@ -1,0 +1,33 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    
+    int r_flex = 0;
+    int r_premium = 0;
+    int r_gold = 0;
+    int entrada;
+    
+    do
+    {
+        printf("Insira 1 para adicionar ração flex ao carrinho.\nInsira 2 para adicionar ração premium ao carrinho.\nInsira 3 para adicionar ração gold ao carrinho.\nPara finalizar a compra digite 0.");
+    scanf("%d", entrada);
+        if(entrada = 1){
+            r_flex++;
+            printf("flex adicionada");
+        }
+        else if(entrada = 2){
+            r_premium++;
+            printf("premium adicionada");
+        }
+        else if(entrada = 3){
+            r_gold++;
+            printf("gold adicionada");
+        }
+        
+    } while (entrada !=0);
+    printf("você comprou ");
+    
+    
+    return 0;
+}
